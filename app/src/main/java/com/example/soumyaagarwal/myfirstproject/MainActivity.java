@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -23,12 +24,13 @@ public class MainActivity extends Activity {
         clickme.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Texthere = text.getText().toString();
-                Intent intent = new Intent(MainActivity.this,
-                        SecondActivity.class);
-                intent.putExtra("Text",Texthere);
-                startActivity(intent);
+                Toast.makeText(v.getContext(),"Hi I am Toast", Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+    public void onClickBtn(View v)
+    {
+        Toast.makeText(this, "Clicked on Button", Toast.LENGTH_LONG).show();
     }
 }

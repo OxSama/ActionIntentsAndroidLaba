@@ -7,16 +7,6 @@
     tools:context="com.example.soumyaagarwal.myfirstproject.MainActivity"
     android:orientation="vertical">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Text"
-        android:textColor="#000000"
-        android:textSize="20dp"
-        android:textStyle="bold"
-
-        android:id="@+id/text" />
-
     <Button
         android:text="Click Me"
         android:layout_width="match_parent"
